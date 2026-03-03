@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fuel — Privacy Policy</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Inter', sans-serif; background: #000; color: #e0e0e0; line-height: 1.7; padding: 48px 24px; }
+        .container { max-width: 640px; margin: 0 auto; }
+        h1 { color: #fff; font-size: 2rem; font-weight: 700; margin-bottom: 8px; }
+        .updated { color: #666; font-size: 0.85rem; margin-bottom: 40px; }
+        h2 { color: #fff; font-size: 1.1rem; font-weight: 600; margin-top: 32px; margin-bottom: 8px; }
+        p { margin-bottom: 16px; color: #aaa; }
+        ul { margin: 0 0 16px 20px; color: #aaa; }
+        li { margin-bottom: 6px; }
+        a { color: #0099cc; }
+        .footer { margin-top: 48px; padding-top: 24px; border-top: 1px solid #222; color: #555; font-size: 0.85rem; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Privacy Policy</h1>
+        <p class="updated">Last updated: March 3, 2026</p>
+
+        <p>Fuel is a calorie and nutrition tracker built by Jake Davis. Your privacy matters — here's exactly what happens with your data.</p>
+
+        <h2>Data That Stays on Your Device</h2>
+        <p>All of your food logs, weight entries, macro data, and goals are stored locally on your device using Apple's SwiftData framework. This data never leaves your phone unless you explicitly enable iCloud sync.</p>
+
+        <h2>AI Food Parsing</h2>
+        <p>If you choose to use the AI-powered food input feature, your food descriptions are sent to the Anthropic API for processing. This requires an API key that you provide. Fuel does not store, transmit, or have access to your API key beyond what is saved in your device's Keychain.</p>
+
+        <h2>Barcode Scanning</h2>
+        <p>Barcode lookups use the OpenFoodFacts API, a free and open food database. Only the barcode number is sent — no personal information.</p>
+
+        <h2>Apple Health</h2>
+        <p>If you grant permission, Fuel can read and write nutrition and weight data to Apple Health. This integration is entirely optional and controlled through iOS permissions. Fuel only accesses the specific data types you approve.</p>
+
+        <h2>What We Don't Do</h2>
+        <ul>
+            <li>No accounts or sign-ups</li>
+            <li>No analytics or tracking SDKs</li>
+            <li>No advertising</li>
+            <li>No data sold to third parties</li>
+            <li>No server-side storage of your data</li>
+        </ul>
+
+        <h2>iCloud Sync</h2>
+        <p>If enabled, your data syncs across your Apple devices through iCloud. This is handled entirely by Apple's CloudKit framework and is subject to Apple's privacy policy.</p>
+
+        <h2>Camera</h2>
+        <p>Fuel requests camera access solely for barcode scanning. No images are stored or transmitted.</p>
+
+        <h2>Contact</h2>
+        <p>Questions? Reach out at <a href="mailto:jake@bryt.works">jake@bryt.works</a>.</p>
+
+        <div class="footer">© 2026 Jake Davis</div>
+    </div>
+</body>
+</html>
