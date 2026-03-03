@@ -1,0 +1,105 @@
+name: Fuel
+options:
+  bundleIdPrefix: com.fuel
+  deploymentTarget:
+    iOS: "17.0"
+    watchOS: "10.0"
+  xcodeVersion: "16.0"
+  createIntermediateGroups: true
+  groupSortPosition: top
+  developmentLanguage: en
+
+settings:
+  base:
+    SWIFT_VERSION: "5.9"
+    DEVELOPMENT_TEAM: "W9B333RUBX"
+
+packages:
+  FuelKit:
+    path: FuelKit
+
+targets:
+  Fuel:
+    type: application
+    platform: iOS
+    sources:
+      - Fuel
+    settings:
+      base:
+        GENERATE_INFOPLIST_FILE: YES
+        INFOPLIST_KEY_UIApplicationSceneManifest_Generation: YES
+        INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents: YES
+        INFOPLIST_KEY_UILaunchScreen_Generation: YES
+        INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone: UIInterfaceOrientationPortrait
+        INFOPLIST_KEY_NSCameraUsageDescription: "Fuel needs camera access to scan food barcodes"
+        INFOPLIST_KEY_NSHealthShareUsageDescription: "Fuel reads your weight data to track your progress"
+        INFOPLIST_KEY_NSHealthUpdateUsageDescription: "Fuel writes your nutrition and weight data to Apple Health"
+        PRODUCT_BUNDLE_IDENTIFIER: com.jakedavis.fuel
+        PRODUCT_NAME: Fuel
+        MARKETING_VERSION: "1.0.0"
+        CURRENT_PROJECT_VERSION: 1
+        ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
+        CODE_SIGN_ENTITLEMENTS: Fuel/Fuel.entitlements
+    dependencies:
+      - package: FuelKit
+    entitlements:
+      path: Fuel/Fuel.entitlements
+      properties:
+        com.apple.security.application-groups:
+          - group.com.jakedavis.fuel
+        com.apple.developer.healthkit: true
+        com.apple.developer.healthkit.access: []
+
+  FuelWidgets:
+    type: app-extension
+    platform: iOS
+    sources:
+      - FuelWidgets
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.jakedavis.fuel.widgets
+        PRODUCT_NAME: FuelWidgets
+        MARKETING_VERSION: "1.0.0"
+        CURRENT_PROJECT_VERSION: 1
+        GENERATE_INFOPLIST_FILE: YES
+        CODE_SIGN_ENTITLEMENTS: FuelWidgets/FuelWidgets.entitlements
+        INFOPLIST_KEY_NSExtension: ""
+    dependencies:
+      - package: FuelKit
+      - sdk: WidgetKit.framework
+      - sdk: SwiftUI.framework
+    entitlements:
+      path: FuelWidgets/FuelWidgets.entitlements
+      properties:
+        com.apple.security.application-groups:
+          - group.com.jakedavis.fuel
+
+  FuelWatch:
+    type: application
+    platform: watchOS
+    sources:
+      - FuelWatch
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.jakedavis.fuel.watchkitapp
+        PRODUCT_NAME: FuelWatch
+        MARKETING_VERSION: "1.0.0"
+        CURRENT_PROJECT_VERSION: 1
+        GENERATE_INFOPLIST_FILE: YES
+        INFOPLIST_KEY_WKCompanionAppBundleIdentifier: com.jakedavis.fuel
+        SDKROOT: watchos
+        SUPPORTS_MACCATALYST: NO
+    dependencies:
+      - package: FuelKit
+
+  FuelTests:
+    type: bundle.unit-test
+    platform: iOS
+    sources:
+      - FuelTests
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.jakedavis.fuel.tests
+    dependencies:
+      - target: Fuel
+      - package: FuelKit

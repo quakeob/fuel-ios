@@ -1,0 +1,986 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		142DEF7F11670C2F20A1816C /* FuelKit in Frameworks */ = {isa = PBXBuildFile; productRef = ECCEE4EEAE5482BBBE4567F3 /* FuelKit */; };
+		1ECF03237F6F016409917AAB /* QuickInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C329EB2354AEE8479812357A /* QuickInputView.swift */; };
+		2BEDAEB71E6186A540E42C60 /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F95BD19C6BC1120CB68E149F /* DashboardView.swift */; };
+		3AB0B5C3842BBE07B586AAD5 /* WeightView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 232AD14750EEB4D880312EDE /* WeightView.swift */; };
+		3E94ACAB45B9428082259135 /* QUICK_START.md in Resources */ = {isa = PBXBuildFile; fileRef = E167F97F3E03CBC00861D179 /* QUICK_START.md */; };
+		41AE1EB9E3FA7E9CFEB52136 /* MealSectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 566E2E5BAEC68729F287A853 /* MealSectionView.swift */; };
+		43B0DEA874C23A549FE0177F /* WatchSessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B74E1A495A010D0DFC18570C /* WatchSessionManager.swift */; };
+		53E4CEF87DD92829B8F27929 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CC85222D9201D0039C47121 /* OnboardingView.swift */; };
+		545806EF09692BF312F2B9CF /* StreakBannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9338295AEF62F7BE9EDE5F20 /* StreakBannerView.swift */; };
+		54CC0E6D70B7FDAEF570115C /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 065C16FEF90C63470CBF91F5 /* AppState.swift */; };
+		59738C782967B6B3DF8CD435 /* CalorieRingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9239543F2C311E6327C1B664 /* CalorieRingView.swift */; };
+		5D036710130B7FBA4D12107A /* WaterTrackerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7FA5332259EF98E4A906CBB /* WaterTrackerView.swift */; };
+		60E7C610D8B6B3BD66F52C0D /* WatchWaterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 551B19C40DD566A16EB8F738 /* WatchWaterView.swift */; };
+		6147639C30F8FB01AAECBA12 /* NLPInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80C83CDBB7DBEFCC2BD38FF3 /* NLPInputView.swift */; };
+		6B889C9128046F0AEEFE8A99 /* DashboardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB36F54BFEF82833E9B6977F /* DashboardViewModel.swift */; };
+		6BDC960AEF939E1F50B04AAF /* StatsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 559157EB7EA0EFD448D1ADDC /* StatsView.swift */; };
+		70651F58D29818378D8B2E46 /* AddFoodViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22E55A72FD34BD45DB6A7585 /* AddFoodViewModel.swift */; };
+		713B89D6E13E15BF77D134F5 /* ProgressBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7539E4F88BEE6C97BCD8BE2D /* ProgressBar.swift */; };
+		7225E6488DB6ED1B64A91343 /* WatchQuickLogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88B2919629F1404964F6957C /* WatchQuickLogView.swift */; };
+		7570BBE4B4709AC5C69E218E /* FuelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B81DEAC6A02A9E39EE1E092 /* FuelTests.swift */; };
+		78092765AAAABDC40E23097E /* ScannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C67D20D8AF28DAE51F70E498 /* ScannerView.swift */; };
+		7CE4B34C890CB2B8FC19B6BC /* FuelWidgetBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55C698AE6A0DD014801C845D /* FuelWidgetBundle.swift */; };
+		7E8E06323F297864053ADF67 /* FuelKit in Frameworks */ = {isa = PBXBuildFile; productRef = 1CFB6C69E9BBE8A026BFBCEE /* FuelKit */; };
+		7FB3CFB01F4B1B21B27422BD /* ManualEntryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042CCC468825EF24D4F43B20 /* ManualEntryView.swift */; };
+		873ECAC8E96F594C3A1D75FB /* CalorieProgressWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46216E12F65FE920CBB9EE73 /* CalorieProgressWidget.swift */; };
+		8EB81468133FE4691B76910D /* Info.plist.template in Resources */ = {isa = PBXBuildFile; fileRef = 38236CDB449EB633E145F3DF /* Info.plist.template */; };
+		9119E9DDB1BB50E34EAFC489 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4B0BB9C82338A6FAB3B4F84 /* WidgetKit.framework */; };
+		92B1514D0551E5A524A47308 /* CHANGES_SUMMARY.md in Resources */ = {isa = PBXBuildFile; fileRef = 8F1FB240F455BC725346C6BB /* CHANGES_SUMMARY.md */; };
+		978548687CE2CA97496124B7 /* FuelApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CB6231CCF18CBAF96C8EBB6 /* FuelApp.swift */; };
+		9FC844528ECB7DCBE0229308 /* FuelKit in Frameworks */ = {isa = PBXBuildFile; productRef = 127CBCBF7EC1894B4BE13F2D /* FuelKit */; };
+		ADA74BF2F3A841792598D8D4 /* MacroSummaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80A5E7AF06EC05999A12946D /* MacroSummaryView.swift */; };
+		BF1CA9A307A23CF217736A18 /* AppConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7643FE2E3BBCC2A7BF008B2A /* AppConfiguration.swift */; };
+		BF25719C3F422FC4069626B3 /* PRODUCTION_CHECKLIST.md in Resources */ = {isa = PBXBuildFile; fileRef = AEE8B645BA2F404B6CF62A33 /* PRODUCTION_CHECKLIST.md */; };
+		C617FF7B1A93E416890B3EF7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A4CA4E29D6BDD10F8B47578 /* ContentView.swift */; };
+		C6647BF6D5562C25C9BC0B55 /* DEPLOYMENT_GUIDE.md in Resources */ = {isa = PBXBuildFile; fileRef = 5A626F80C040C55152CFD015 /* DEPLOYMENT_GUIDE.md */; };
+		C6D74FA80269A426D32F2A77 /* ParsedFoodConfirmView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2A37E1D3A02EE60461B7AA /* ParsedFoodConfirmView.swift */; };
+		D01E5C4592E0356AD6B54DEB /* BarcodeCameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86B79655C51FF4F31A3F58A1 /* BarcodeCameraView.swift */; };
+		D1E947121B30270388013B65 /* FuelCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15B8AAE6BAC3927C584531DD /* FuelCard.swift */; };
+		D47D18FC084936E32ED8B788 /* AddFoodSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91E5134C6C6EA71F9F036BC5 /* AddFoodSheet.swift */; };
+		D8EB9520A82C10B13C3E4AFA /* PhoneSessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7302F6192AB23290E243C2D /* PhoneSessionManager.swift */; };
+		D95BC3E0EF775331E72C006F /* AnimatedRing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 176FF311ED28FFC9515CFFEB /* AnimatedRing.swift */; };
+		E521F757B323F5D726C05302 /* FuelWatchApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300089B6E27763F76C10EB7E /* FuelWatchApp.swift */; };
+		E54DF1461F32C82E76D5BE12 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8B98036C8BC97C1F6060F26 /* SwiftUI.framework */; };
+		E9DBF23A331030DEAA6A7790 /* AppLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9C9777817C144517E622428 /* AppLogger.swift */; };
+		EA7FE1E694FB083AF29DD750 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C507C0ACA4A122D6B16EB238 /* SettingsView.swift */; };
+		EB68AB61645DB245CF9BB781 /* Fuel.entitlements.template in Resources */ = {isa = PBXBuildFile; fileRef = 410ED05C45BD7DD360E6E48A /* Fuel.entitlements.template */; };
+		EB7682702122755970714000 /* WatchDashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A22E800FAF371CBEDE28423 /* WatchDashboardView.swift */; };
+		F05577ED5A1C7D592FA75A63 /* FuelKit in Frameworks */ = {isa = PBXBuildFile; productRef = 4271E8F291EF3BC4F4965C3D /* FuelKit */; };
+		F14726AA397635036884439C /* WaterIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E17735753920BD00D078AFD /* WaterIntent.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F308EC297973B691D53094E8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 22F6338957F2B4A0C82A39F8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A17863FCB93610ED128DE7C9;
+			remoteInfo = Fuel;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		042CCC468825EF24D4F43B20 /* ManualEntryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManualEntryView.swift; sourceTree = "<group>"; };
+		065C16FEF90C63470CBF91F5 /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
+		0A22E800FAF371CBEDE28423 /* WatchDashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchDashboardView.swift; sourceTree = "<group>"; };
+		15B8AAE6BAC3927C584531DD /* FuelCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FuelCard.swift; sourceTree = "<group>"; };
+		176FF311ED28FFC9515CFFEB /* AnimatedRing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatedRing.swift; sourceTree = "<group>"; };
+		1CC85222D9201D0039C47121 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
+		1E17735753920BD00D078AFD /* WaterIntent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterIntent.swift; sourceTree = "<group>"; };
+		22E55A72FD34BD45DB6A7585 /* AddFoodViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddFoodViewModel.swift; sourceTree = "<group>"; };
+		232AD14750EEB4D880312EDE /* WeightView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeightView.swift; sourceTree = "<group>"; };
+		2CB6231CCF18CBAF96C8EBB6 /* FuelApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FuelApp.swift; sourceTree = "<group>"; };
+		300089B6E27763F76C10EB7E /* FuelWatchApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FuelWatchApp.swift; sourceTree = "<group>"; };
+		38236CDB449EB633E145F3DF /* Info.plist.template */ = {isa = PBXFileReference; path = Info.plist.template; sourceTree = "<group>"; };
+		410ED05C45BD7DD360E6E48A /* Fuel.entitlements.template */ = {isa = PBXFileReference; path = Fuel.entitlements.template; sourceTree = "<group>"; };
+		46216E12F65FE920CBB9EE73 /* CalorieProgressWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalorieProgressWidget.swift; sourceTree = "<group>"; };
+		4A4CA4E29D6BDD10F8B47578 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		551B19C40DD566A16EB8F738 /* WatchWaterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchWaterView.swift; sourceTree = "<group>"; };
+		559157EB7EA0EFD448D1ADDC /* StatsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatsView.swift; sourceTree = "<group>"; };
+		55C698AE6A0DD014801C845D /* FuelWidgetBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FuelWidgetBundle.swift; sourceTree = "<group>"; };
+		566E2E5BAEC68729F287A853 /* MealSectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealSectionView.swift; sourceTree = "<group>"; };
+		5A626F80C040C55152CFD015 /* DEPLOYMENT_GUIDE.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = DEPLOYMENT_GUIDE.md; sourceTree = "<group>"; };
+		7539E4F88BEE6C97BCD8BE2D /* ProgressBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressBar.swift; sourceTree = "<group>"; };
+		7643FE2E3BBCC2A7BF008B2A /* AppConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConfiguration.swift; sourceTree = "<group>"; };
+		80A5E7AF06EC05999A12946D /* MacroSummaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MacroSummaryView.swift; sourceTree = "<group>"; };
+		80C83CDBB7DBEFCC2BD38FF3 /* NLPInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NLPInputView.swift; sourceTree = "<group>"; };
+		82561FC0BBD7F110FBC3B868 /* FuelTests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = FuelTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		86B79655C51FF4F31A3F58A1 /* BarcodeCameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarcodeCameraView.swift; sourceTree = "<group>"; };
+		88B2919629F1404964F6957C /* WatchQuickLogView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchQuickLogView.swift; sourceTree = "<group>"; };
+		8F1FB240F455BC725346C6BB /* CHANGES_SUMMARY.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = CHANGES_SUMMARY.md; sourceTree = "<group>"; };
+		91E5134C6C6EA71F9F036BC5 /* AddFoodSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddFoodSheet.swift; sourceTree = "<group>"; };
+		9239543F2C311E6327C1B664 /* CalorieRingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalorieRingView.swift; sourceTree = "<group>"; };
+		92D1C7D791E40BD366831930 /* FuelKit */ = {isa = PBXFileReference; lastKnownFileType = folder; name = FuelKit; path = FuelKit; sourceTree = SOURCE_ROOT; };
+		9338295AEF62F7BE9EDE5F20 /* StreakBannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StreakBannerView.swift; sourceTree = "<group>"; };
+		9B81DEAC6A02A9E39EE1E092 /* FuelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FuelTests.swift; sourceTree = "<group>"; };
+		A4B0BB9C82338A6FAB3B4F84 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		AB36F54BFEF82833E9B6977F /* DashboardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewModel.swift; sourceTree = "<group>"; };
+		AEE8B645BA2F404B6CF62A33 /* PRODUCTION_CHECKLIST.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = PRODUCTION_CHECKLIST.md; sourceTree = "<group>"; };
+		B74E1A495A010D0DFC18570C /* WatchSessionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchSessionManager.swift; sourceTree = "<group>"; };
+		B8A7E02A0CD262488319F2DE /* FuelWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FuelWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C329EB2354AEE8479812357A /* QuickInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickInputView.swift; sourceTree = "<group>"; };
+		C507C0ACA4A122D6B16EB238 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		C67D20D8AF28DAE51F70E498 /* ScannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScannerView.swift; sourceTree = "<group>"; };
+		C7FA5332259EF98E4A906CBB /* WaterTrackerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterTrackerView.swift; sourceTree = "<group>"; };
+		D8B98036C8BC97C1F6060F26 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		DDE47FA166225FB7AD5457DA /* FuelWidgets.appex */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = "wrapper.app-extension"; path = FuelWidgets.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		E167F97F3E03CBC00861D179 /* QUICK_START.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = QUICK_START.md; sourceTree = "<group>"; };
+		E9C9777817C144517E622428 /* AppLogger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppLogger.swift; sourceTree = "<group>"; };
+		EBAF2D70332840323A44B4CC /* Fuel.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Fuel.entitlements; sourceTree = "<group>"; };
+		EF2A37E1D3A02EE60461B7AA /* ParsedFoodConfirmView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParsedFoodConfirmView.swift; sourceTree = "<group>"; };
+		F1A7050CEB0C92D66359A2C4 /* FuelWidgets.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = FuelWidgets.entitlements; sourceTree = "<group>"; };
+		F7302F6192AB23290E243C2D /* PhoneSessionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneSessionManager.swift; sourceTree = "<group>"; };
+		F826CB7F5C5FF43B0F03E3AB /* Fuel.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = Fuel.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F95BD19C6BC1120CB68E149F /* DashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		133F1F757443AB3F5D765A0E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F05577ED5A1C7D592FA75A63 /* FuelKit in Frameworks */,
+				9119E9DDB1BB50E34EAFC489 /* WidgetKit.framework in Frameworks */,
+				E54DF1461F32C82E76D5BE12 /* SwiftUI.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		72F2F815260A7809E668F0E7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9FC844528ECB7DCBE0229308 /* FuelKit in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C9E6846F511890C572A074E5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				142DEF7F11670C2F20A1816C /* FuelKit in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E7EB8AF1BC2CAC3082F0A1E7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7E8E06323F297864053ADF67 /* FuelKit in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0A83DACEA825D8B215838810 /* FuelWatch */ = {
+			isa = PBXGroup;
+			children = (
+				269DBC7292E62AEB80D3AC03 /* Connectivity */,
+				C3147553A75BE9956125DBD0 /* Views */,
+				300089B6E27763F76C10EB7E /* FuelWatchApp.swift */,
+			);
+			path = FuelWatch;
+			sourceTree = "<group>";
+		};
+		25C6CFECA8B66E68AAAA0A94 /* Scanner */ = {
+			isa = PBXGroup;
+			children = (
+				86B79655C51FF4F31A3F58A1 /* BarcodeCameraView.swift */,
+				C67D20D8AF28DAE51F70E498 /* ScannerView.swift */,
+			);
+			path = Scanner;
+			sourceTree = "<group>";
+		};
+		269DBC7292E62AEB80D3AC03 /* Connectivity */ = {
+			isa = PBXGroup;
+			children = (
+				B74E1A495A010D0DFC18570C /* WatchSessionManager.swift */,
+			);
+			path = Connectivity;
+			sourceTree = "<group>";
+		};
+		29D03EB6221087A02196DCED /* Dashboard */ = {
+			isa = PBXGroup;
+			children = (
+				9239543F2C311E6327C1B664 /* CalorieRingView.swift */,
+				F95BD19C6BC1120CB68E149F /* DashboardView.swift */,
+				80A5E7AF06EC05999A12946D /* MacroSummaryView.swift */,
+				566E2E5BAEC68729F287A853 /* MealSectionView.swift */,
+				C329EB2354AEE8479812357A /* QuickInputView.swift */,
+				9338295AEF62F7BE9EDE5F20 /* StreakBannerView.swift */,
+				C7FA5332259EF98E4A906CBB /* WaterTrackerView.swift */,
+			);
+			path = Dashboard;
+			sourceTree = "<group>";
+		};
+		31111F9727A499D4EAF1794D /* FuelWidgets */ = {
+			isa = PBXGroup;
+			children = (
+				B7FA23D0E164C9252033FC04 /* CalorieWidget */,
+				776A99C21CA5CE8AABA9F2EA /* Intents */,
+				55C698AE6A0DD014801C845D /* FuelWidgetBundle.swift */,
+				F1A7050CEB0C92D66359A2C4 /* FuelWidgets.entitlements */,
+			);
+			path = FuelWidgets;
+			sourceTree = "<group>";
+		};
+		428E117937EEF91A72724CAA /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				1CC85222D9201D0039C47121 /* OnboardingView.swift */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		466ECEC216D013507D6EFF18 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D8B98036C8BC97C1F6060F26 /* SwiftUI.framework */,
+				A4B0BB9C82338A6FAB3B4F84 /* WidgetKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5649C0F7D74F4860E748C8A0 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				176FF311ED28FFC9515CFFEB /* AnimatedRing.swift */,
+				15B8AAE6BAC3927C584531DD /* FuelCard.swift */,
+				7539E4F88BEE6C97BCD8BE2D /* ProgressBar.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		567EA496E5A9F91049F2F640 /* Fuel */ = {
+			isa = PBXGroup;
+			children = (
+				5649C0F7D74F4860E748C8A0 /* Components */,
+				5E984C1B10C81F649B23E22E /* Features */,
+				5D90C28B0CD003436FEFB1F0 /* Navigation */,
+				BFE2D2F28BF9399BC85BF236 /* ViewModels */,
+				7643FE2E3BBCC2A7BF008B2A /* AppConfiguration.swift */,
+				E9C9777817C144517E622428 /* AppLogger.swift */,
+				8F1FB240F455BC725346C6BB /* CHANGES_SUMMARY.md */,
+				5A626F80C040C55152CFD015 /* DEPLOYMENT_GUIDE.md */,
+				EBAF2D70332840323A44B4CC /* Fuel.entitlements */,
+				410ED05C45BD7DD360E6E48A /* Fuel.entitlements.template */,
+				2CB6231CCF18CBAF96C8EBB6 /* FuelApp.swift */,
+				38236CDB449EB633E145F3DF /* Info.plist.template */,
+				AEE8B645BA2F404B6CF62A33 /* PRODUCTION_CHECKLIST.md */,
+				E167F97F3E03CBC00861D179 /* QUICK_START.md */,
+			);
+			path = Fuel;
+			sourceTree = "<group>";
+		};
+		5D90C28B0CD003436FEFB1F0 /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				065C16FEF90C63470CBF91F5 /* AppState.swift */,
+				4A4CA4E29D6BDD10F8B47578 /* ContentView.swift */,
+			);
+			path = Navigation;
+			sourceTree = "<group>";
+		};
+		5E984C1B10C81F649B23E22E /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				C825063CBC18E4F9E4FB955A /* AddFood */,
+				29D03EB6221087A02196DCED /* Dashboard */,
+				428E117937EEF91A72724CAA /* Onboarding */,
+				25C6CFECA8B66E68AAAA0A94 /* Scanner */,
+				95F65BFE862FFA356C060FDF /* Settings */,
+				C39657E6A09530146B431F4E /* Stats */,
+				8ABDED1540E8F92274656345 /* Watch */,
+				792EFFB0C84A9D4378274652 /* Weight */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		6FD7862AC9036B8A4FC7F0D5 /* Packages */ = {
+			isa = PBXGroup;
+			children = (
+				92D1C7D791E40BD366831930 /* FuelKit */,
+			);
+			name = Packages;
+			sourceTree = "<group>";
+		};
+		776A99C21CA5CE8AABA9F2EA /* Intents */ = {
+			isa = PBXGroup;
+			children = (
+				1E17735753920BD00D078AFD /* WaterIntent.swift */,
+			);
+			path = Intents;
+			sourceTree = "<group>";
+		};
+		792EFFB0C84A9D4378274652 /* Weight */ = {
+			isa = PBXGroup;
+			children = (
+				232AD14750EEB4D880312EDE /* WeightView.swift */,
+			);
+			path = Weight;
+			sourceTree = "<group>";
+		};
+		88113ABE56BBFE3075F2B13B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F826CB7F5C5FF43B0F03E3AB /* Fuel.app */,
+				82561FC0BBD7F110FBC3B868 /* FuelTests.xctest */,
+				B8A7E02A0CD262488319F2DE /* FuelWatch.app */,
+				DDE47FA166225FB7AD5457DA /* FuelWidgets.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8ABDED1540E8F92274656345 /* Watch */ = {
+			isa = PBXGroup;
+			children = (
+				F7302F6192AB23290E243C2D /* PhoneSessionManager.swift */,
+			);
+			path = Watch;
+			sourceTree = "<group>";
+		};
+		95F65BFE862FFA356C060FDF /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				C507C0ACA4A122D6B16EB238 /* SettingsView.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		A4D793BEDDFE5C04B2987B67 = {
+			isa = PBXGroup;
+			children = (
+				567EA496E5A9F91049F2F640 /* Fuel */,
+				ED5D2F333D1BE6D66258AD3E /* FuelTests */,
+				0A83DACEA825D8B215838810 /* FuelWatch */,
+				31111F9727A499D4EAF1794D /* FuelWidgets */,
+				6FD7862AC9036B8A4FC7F0D5 /* Packages */,
+				466ECEC216D013507D6EFF18 /* Frameworks */,
+				88113ABE56BBFE3075F2B13B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B7FA23D0E164C9252033FC04 /* CalorieWidget */ = {
+			isa = PBXGroup;
+			children = (
+				46216E12F65FE920CBB9EE73 /* CalorieProgressWidget.swift */,
+			);
+			path = CalorieWidget;
+			sourceTree = "<group>";
+		};
+		BFE2D2F28BF9399BC85BF236 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				22E55A72FD34BD45DB6A7585 /* AddFoodViewModel.swift */,
+				AB36F54BFEF82833E9B6977F /* DashboardViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		C3147553A75BE9956125DBD0 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				0A22E800FAF371CBEDE28423 /* WatchDashboardView.swift */,
+				88B2919629F1404964F6957C /* WatchQuickLogView.swift */,
+				551B19C40DD566A16EB8F738 /* WatchWaterView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		C39657E6A09530146B431F4E /* Stats */ = {
+			isa = PBXGroup;
+			children = (
+				559157EB7EA0EFD448D1ADDC /* StatsView.swift */,
+			);
+			path = Stats;
+			sourceTree = "<group>";
+		};
+		C825063CBC18E4F9E4FB955A /* AddFood */ = {
+			isa = PBXGroup;
+			children = (
+				91E5134C6C6EA71F9F036BC5 /* AddFoodSheet.swift */,
+				042CCC468825EF24D4F43B20 /* ManualEntryView.swift */,
+				80C83CDBB7DBEFCC2BD38FF3 /* NLPInputView.swift */,
+				EF2A37E1D3A02EE60461B7AA /* ParsedFoodConfirmView.swift */,
+			);
+			path = AddFood;
+			sourceTree = "<group>";
+		};
+		ED5D2F333D1BE6D66258AD3E /* FuelTests */ = {
+			isa = PBXGroup;
+			children = (
+				9B81DEAC6A02A9E39EE1E092 /* FuelTests.swift */,
+			);
+			path = FuelTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0445E263686D685E650C6020 /* FuelTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 68FFEEF5B2CE0212D700E4A4 /* Build configuration list for PBXNativeTarget "FuelTests" */;
+			buildPhases = (
+				16556AF2D6786364F7E0C623 /* Sources */,
+				E7EB8AF1BC2CAC3082F0A1E7 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F8FFD2F641B4765766416D34 /* PBXTargetDependency */,
+			);
+			name = FuelTests;
+			packageProductDependencies = (
+				1CFB6C69E9BBE8A026BFBCEE /* FuelKit */,
+			);
+			productName = FuelTests;
+			productReference = 82561FC0BBD7F110FBC3B868 /* FuelTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		73DB5FCF36F5DCEE74F6F78A /* FuelWatch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 29C9EC63B212FF9F5D3CE0D8 /* Build configuration list for PBXNativeTarget "FuelWatch" */;
+			buildPhases = (
+				60FFFB7F7F005EF02E9171AE /* Sources */,
+				C9E6846F511890C572A074E5 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FuelWatch;
+			packageProductDependencies = (
+				ECCEE4EEAE5482BBBE4567F3 /* FuelKit */,
+			);
+			productName = FuelWatch;
+			productReference = B8A7E02A0CD262488319F2DE /* FuelWatch.app */;
+			productType = "com.apple.product-type.application";
+		};
+		94725C8913C6744B3020305B /* FuelWidgets */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E8E39058F5DE88DD2152B28B /* Build configuration list for PBXNativeTarget "FuelWidgets" */;
+			buildPhases = (
+				D543DBD4AB5DBC380F63DF76 /* Sources */,
+				133F1F757443AB3F5D765A0E /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FuelWidgets;
+			packageProductDependencies = (
+				4271E8F291EF3BC4F4965C3D /* FuelKit */,
+			);
+			productName = FuelWidgets;
+			productReference = DDE47FA166225FB7AD5457DA /* FuelWidgets.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		A17863FCB93610ED128DE7C9 /* Fuel */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9FC2AA7847CA9006D20E2FC3 /* Build configuration list for PBXNativeTarget "Fuel" */;
+			buildPhases = (
+				50EC26212791FF96625211A5 /* Sources */,
+				EFFCE1C5E9E9034602C676DA /* Resources */,
+				72F2F815260A7809E668F0E7 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Fuel;
+			packageProductDependencies = (
+				127CBCBF7EC1894B4BE13F2D /* FuelKit */,
+			);
+			productName = Fuel;
+			productReference = F826CB7F5C5FF43B0F03E3AB /* Fuel.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		22F6338957F2B4A0C82A39F8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1600;
+				TargetAttributes = {
+					0445E263686D685E650C6020 = {
+						DevelopmentTeam = W9B333RUBX;
+					};
+					73DB5FCF36F5DCEE74F6F78A = {
+						DevelopmentTeam = W9B333RUBX;
+					};
+					94725C8913C6744B3020305B = {
+						DevelopmentTeam = W9B333RUBX;
+					};
+					A17863FCB93610ED128DE7C9 = {
+						DevelopmentTeam = W9B333RUBX;
+					};
+				};
+			};
+			buildConfigurationList = 306CDF6D58ECF3305745077F /* Build configuration list for PBXProject "Fuel" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = A4D793BEDDFE5C04B2987B67;
+			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				B181C2B07AA30969CDECE050 /* XCLocalSwiftPackageReference "FuelKit" */,
+			);
+			preferredProjectObjectVersion = 77;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A17863FCB93610ED128DE7C9 /* Fuel */,
+				0445E263686D685E650C6020 /* FuelTests */,
+				73DB5FCF36F5DCEE74F6F78A /* FuelWatch */,
+				94725C8913C6744B3020305B /* FuelWidgets */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EFFCE1C5E9E9034602C676DA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				92B1514D0551E5A524A47308 /* CHANGES_SUMMARY.md in Resources */,
+				C6647BF6D5562C25C9BC0B55 /* DEPLOYMENT_GUIDE.md in Resources */,
+				EB68AB61645DB245CF9BB781 /* Fuel.entitlements.template in Resources */,
+				8EB81468133FE4691B76910D /* Info.plist.template in Resources */,
+				BF25719C3F422FC4069626B3 /* PRODUCTION_CHECKLIST.md in Resources */,
+				3E94ACAB45B9428082259135 /* QUICK_START.md in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		16556AF2D6786364F7E0C623 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7570BBE4B4709AC5C69E218E /* FuelTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		50EC26212791FF96625211A5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D47D18FC084936E32ED8B788 /* AddFoodSheet.swift in Sources */,
+				70651F58D29818378D8B2E46 /* AddFoodViewModel.swift in Sources */,
+				D95BC3E0EF775331E72C006F /* AnimatedRing.swift in Sources */,
+				BF1CA9A307A23CF217736A18 /* AppConfiguration.swift in Sources */,
+				E9DBF23A331030DEAA6A7790 /* AppLogger.swift in Sources */,
+				54CC0E6D70B7FDAEF570115C /* AppState.swift in Sources */,
+				D01E5C4592E0356AD6B54DEB /* BarcodeCameraView.swift in Sources */,
+				59738C782967B6B3DF8CD435 /* CalorieRingView.swift in Sources */,
+				C617FF7B1A93E416890B3EF7 /* ContentView.swift in Sources */,
+				2BEDAEB71E6186A540E42C60 /* DashboardView.swift in Sources */,
+				6B889C9128046F0AEEFE8A99 /* DashboardViewModel.swift in Sources */,
+				978548687CE2CA97496124B7 /* FuelApp.swift in Sources */,
+				D1E947121B30270388013B65 /* FuelCard.swift in Sources */,
+				ADA74BF2F3A841792598D8D4 /* MacroSummaryView.swift in Sources */,
+				7FB3CFB01F4B1B21B27422BD /* ManualEntryView.swift in Sources */,
+				41AE1EB9E3FA7E9CFEB52136 /* MealSectionView.swift in Sources */,
+				6147639C30F8FB01AAECBA12 /* NLPInputView.swift in Sources */,
+				53E4CEF87DD92829B8F27929 /* OnboardingView.swift in Sources */,
+				C6D74FA80269A426D32F2A77 /* ParsedFoodConfirmView.swift in Sources */,
+				D8EB9520A82C10B13C3E4AFA /* PhoneSessionManager.swift in Sources */,
+				713B89D6E13E15BF77D134F5 /* ProgressBar.swift in Sources */,
+				1ECF03237F6F016409917AAB /* QuickInputView.swift in Sources */,
+				78092765AAAABDC40E23097E /* ScannerView.swift in Sources */,
+				EA7FE1E694FB083AF29DD750 /* SettingsView.swift in Sources */,
+				6BDC960AEF939E1F50B04AAF /* StatsView.swift in Sources */,
+				545806EF09692BF312F2B9CF /* StreakBannerView.swift in Sources */,
+				5D036710130B7FBA4D12107A /* WaterTrackerView.swift in Sources */,
+				3AB0B5C3842BBE07B586AAD5 /* WeightView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		60FFFB7F7F005EF02E9171AE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E521F757B323F5D726C05302 /* FuelWatchApp.swift in Sources */,
+				EB7682702122755970714000 /* WatchDashboardView.swift in Sources */,
+				7225E6488DB6ED1B64A91343 /* WatchQuickLogView.swift in Sources */,
+				43B0DEA874C23A549FE0177F /* WatchSessionManager.swift in Sources */,
+				60E7C610D8B6B3BD66F52C0D /* WatchWaterView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D543DBD4AB5DBC380F63DF76 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				873ECAC8E96F594C3A1D75FB /* CalorieProgressWidget.swift in Sources */,
+				7CE4B34C890CB2B8FC19B6BC /* FuelWidgetBundle.swift in Sources */,
+				F14726AA397635036884439C /* WaterIntent.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F8FFD2F641B4765766416D34 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A17863FCB93610ED128DE7C9 /* Fuel */;
+			targetProxy = F308EC297973B691D53094E8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0140D573D3C2E45F8A564A6F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = W9B333RUBX;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.9;
+				WATCHOS_DEPLOYMENT_TARGET = 10.0;
+			};
+			name = Release;
+		};
+		05837AB7B3503F95E2F4A1D3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = com.jakedavis.fuel;
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jakedavis.fuel.watchkitapp;
+				PRODUCT_NAME = FuelWatch;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
+				TARGETED_DEVICE_FAMILY = 4;
+			};
+			name = Debug;
+		};
+		2364648231AEDF395D2F9743 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = FuelWidgets/FuelWidgets.entitlements;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSExtension = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jakedavis.fuel.widgets;
+				PRODUCT_NAME = FuelWidgets;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2DFAD320A0E48A65485AA007 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = W9B333RUBX;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.9;
+				WATCHOS_DEPLOYMENT_TARGET = 10.0;
+			};
+			name = Debug;
+		};
+		2F6C78B4CC5619D5D7D9F425 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Fuel/Fuel.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Fuel needs camera access to scan food barcodes";
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "Fuel reads your weight data to track your progress";
+				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "Fuel writes your nutrition and weight data to Apple Health";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jakedavis.fuel;
+				PRODUCT_NAME = Fuel;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5533E0C7942627A80E7BF960 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = FuelWidgets/FuelWidgets.entitlements;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSExtension = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jakedavis.fuel.widgets;
+				PRODUCT_NAME = FuelWidgets;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		6A6A55DA0DC7F4B28FD25880 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jakedavis.fuel.tests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Fuel.app/Fuel";
+			};
+			name = Debug;
+		};
+		A61C42CBF17B1DB6B6634E64 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jakedavis.fuel.tests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Fuel.app/Fuel";
+			};
+			name = Release;
+		};
+		CA8C38FCD1D82E5F11B6E1F0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Fuel/Fuel.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Fuel needs camera access to scan food barcodes";
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "Fuel reads your weight data to track your progress";
+				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "Fuel writes your nutrition and weight data to Apple Health";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jakedavis.fuel;
+				PRODUCT_NAME = Fuel;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		EE96E8237BA02AF2EDBF376B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = com.jakedavis.fuel;
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jakedavis.fuel.watchkitapp;
+				PRODUCT_NAME = FuelWatch;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
+				TARGETED_DEVICE_FAMILY = 4;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		29C9EC63B212FF9F5D3CE0D8 /* Build configuration list for PBXNativeTarget "FuelWatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				05837AB7B3503F95E2F4A1D3 /* Debug */,
+				EE96E8237BA02AF2EDBF376B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		306CDF6D58ECF3305745077F /* Build configuration list for PBXProject "Fuel" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2DFAD320A0E48A65485AA007 /* Debug */,
+				0140D573D3C2E45F8A564A6F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		68FFEEF5B2CE0212D700E4A4 /* Build configuration list for PBXNativeTarget "FuelTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6A6A55DA0DC7F4B28FD25880 /* Debug */,
+				A61C42CBF17B1DB6B6634E64 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		9FC2AA7847CA9006D20E2FC3 /* Build configuration list for PBXNativeTarget "Fuel" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2F6C78B4CC5619D5D7D9F425 /* Debug */,
+				CA8C38FCD1D82E5F11B6E1F0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		E8E39058F5DE88DD2152B28B /* Build configuration list for PBXNativeTarget "FuelWidgets" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2364648231AEDF395D2F9743 /* Debug */,
+				5533E0C7942627A80E7BF960 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		B181C2B07AA30969CDECE050 /* XCLocalSwiftPackageReference "FuelKit" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = FuelKit;
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		127CBCBF7EC1894B4BE13F2D /* FuelKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = FuelKit;
+		};
+		1CFB6C69E9BBE8A026BFBCEE /* FuelKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = FuelKit;
+		};
+		4271E8F291EF3BC4F4965C3D /* FuelKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = FuelKit;
+		};
+		ECCEE4EEAE5482BBBE4567F3 /* FuelKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = FuelKit;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 22F6338957F2B4A0C82A39F8 /* Project object */;
+}

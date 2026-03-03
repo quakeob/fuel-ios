@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <!-- HealthKit Entitlement -->
+    <key>com.apple.developer.healthkit</key>
+    <true/>
+    
+    <key>com.apple.developer.healthkit.access</key>
+    <array>
+        <!-- Empty array means all capabilities -->
+    </array>
+    
+    <!-- App Groups for sharing data between app and extensions -->
+    <key>com.apple.security.application-groups</key>
+    <array>
+        <string>group.com.fuel.app</string>
+    </array>
+    
+    <!-- Keychain Access Groups -->
+    <key>keychain-access-groups</key>
+    <array>
+        <string>$(AppIdentifierPrefix)group.com.fuel.app</string>
+    </array>
+    
+    <!-- CloudKit (if enabled) -->
+    <!-- Uncomment if you enable CloudKit in AppConfiguration -->
+    <!--
+    <key>com.apple.developer.icloud-container-identifiers</key>
+    <array>
+        <string>iCloud.com.fuel.app</string>
+    </array>
+    
+    <key>com.apple.developer.icloud-services</key>
+    <array>
+        <string>CloudKit</string>
+    </array>
+    
+    <key>com.apple.developer.ubiquity-kvstore-identifier</key>
+    <string>$(TeamIdentifierPrefix)com.fuel.app</string>
+    -->
+    
+    <!-- Associated Domains (if using universal links or handoff) -->
+    <!--
+    <key>com.apple.developer.associated-domains</key>
+    <array>
+        <string>applinks:fuel.app</string>
+        <string>applinks:www.fuel.app</string>
+    </array>
+    -->
+    
+    <!-- Siri Intents (if implementing Siri shortcuts) -->
+    <!--
+    <key>com.apple.developer.siri</key>
+    <true/>
+    -->
+    
+    <!-- Push Notifications (if implementing notifications) -->
+    <!--
+    <key>aps-environment</key>
+    <string>development</string>
+    -->
+</dict>
+</plist>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <!-- REQUIRED: Camera access for barcode scanning -->
+    <key>NSCameraUsageDescription</key>
+    <string>Fuel needs camera access to scan food barcodes for quick nutrition logging.</string>
+    
+    <!-- REQUIRED: Photo library access for food images -->
+    <key>NSPhotoLibraryUsageDescription</key>
+    <string>Fuel needs photo library access to import food images for meal tracking.</string>
+    
+    <!-- REQUIRED if using HealthKit -->
+    <key>NSHealthUpdateUsageDescription</key>
+    <string>Fuel would like to write your nutrition and weight data to Health to keep your health data synchronized across your devices.</string>
+    
+    <key>NSHealthShareUsageDescription</key>
+    <string>Fuel would like to read your weight and activity data from Health to provide personalized nutrition recommendations.</string>
+    
+    <!-- REQUIRED if using tracking for ads or analytics -->
+    <key>NSUserTrackingUsageDescription</key>
+    <string>This helps us provide you with personalized recommendations and improve the app experience.</string>
+    
+    <!-- App Information -->
+    <key>CFBundleDisplayName</key>
+    <string>Fuel</string>
+    
+    <key>CFBundleName</key>
+    <string>$(PRODUCT_NAME)</string>
+    
+    <key>CFBundleIdentifier</key>
+    <string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
+    
+    <key>CFBundleVersion</key>
+    <string>1</string>
+    
+    <key>CFBundleShortVersionString</key>
+    <string>1.0.0</string>
+    
+    <!-- Supported Platforms -->
+    <key>UIRequiredDeviceCapabilities</key>
+    <array>
+        <string>arm64</string>
+    </array>
+    
+    <!-- UI Configuration -->
+    <key>UILaunchScreen</key>
+    <dict>
+        <key>UIImageName</key>
+        <string>LaunchImage</string>
+        <key>UIColorName</key>
+        <string>LaunchColor</string>
+    </dict>
+    
+    <key>UISupportedInterfaceOrientations</key>
+    <array>
+        <string>UIInterfaceOrientationPortrait</string>
+        <string>UIInterfaceOrientationLandscapeLeft</string>
+        <string>UIInterfaceOrientationLandscapeRight</string>
+    </array>
+    
+    <key>UISupportedInterfaceOrientations~ipad</key>
+    <array>
+        <string>UIInterfaceOrientationPortrait</string>
+        <string>UIInterfaceOrientationPortraitUpsideDown</string>
+        <string>UIInterfaceOrientationLandscapeLeft</string>
+        <string>UIInterfaceOrientationLandscapeRight</string>
+    </array>
+    
+    <!-- App Transport Security (if needed for API calls) -->
+    <key>NSAppTransportSecurity</key>
+    <dict>
+        <!-- Only use this in development. Remove for production! -->
+        <!-- <key>NSAllowsArbitraryLoads</key>
+        <false/> -->
+    </dict>
+    
+    <!-- Background Modes (if needed) -->
+    <!-- <key>UIBackgroundModes</key>
+    <array>
+        <string>processing</string>
+        <string>fetch</string>
+    </array> -->
+    
+    <!-- App Category -->
+    <key>LSApplicationCategoryType</key>
+    <string>public.app-category.healthcare-fitness</string>
+</dict>
+</plist>
